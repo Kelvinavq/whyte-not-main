@@ -1,8 +1,11 @@
 .title{
-    font-size: 1.5em ;
+    font-size: 1em ;
     font-weight: 500;
     margin:10px 5%;
     text-align: center;
+    background: #b60000;
+    padding: 20px 10px;
+    color: white;
 }
 .banner{
     margin-top:50px;
@@ -50,6 +53,7 @@
     color: #b60000;
     text-align: center;
     margin: 0 5%;
+    text-transform: uppercase;
 }
 .containerCarroussel2 h3{
     font-size: 2em;
@@ -102,6 +106,10 @@
     align-items:center;
     margin:20px 0px;
     text-align: center;
+}
+
+.containerContacto img{
+    max-width: 100%;
 }
 
 .containerContacto > *{

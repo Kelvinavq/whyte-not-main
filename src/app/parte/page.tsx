@@ -8,6 +8,7 @@ import Image from 'next/image';
 import facebook from "../../../public/img/parte/FACEBOOK.png"
 import instagram  from "../../../public/img/parte/INSTAGRAM.png"
 import whatsapp from "../../../public/img/parte/WHATSAPP.png"
+import fuimosParte from "../../../public/img/parte/fuimos-parte.png"
 import { Button, Link } from '@chakra-ui/react';
 import ButtomWhat from '@/components/buttomWhat/buttomWhat';
 import Slider from '@/components/slider/slider';
@@ -34,17 +35,15 @@ function Parte(){
                 Estas son algunas de las empresas con las que whyte not ha tenido el privilegio de trabajar en proyectos de marketing digital.  Estamos orgullosos de haber colaborado con cada una de ellas y estamos agradecidos por la confianza que han depositado en nosotros. Entre las empresas con las que hemos trabajado se encuentran algunas reconocidas como marcas lideres en sus respectivos sectores, asi como pequeñas y medianas empresas que buscan hacer crecer su presencia online.
             </h3>
             <section className={Style.containerCarroussel}>
-                <h3>Fuimos parte de proyectos de marketing digita para empresas como :</h3>
+                <h3>Fuimos parte de proyectos de marketing digital en</h3>
                 <Slider></Slider>
             </section>
             <section className={Style.containerCarroussel2}>
-                <h3>Proyectos de TV en Chile (Dirección y Producción)</h3>
+                <h3>Y DE PROYECTOS DE TV EN CHILE (DIRECCIÓN Y PRODUCCIÓN)</h3>
                 <SliderImgTwo></SliderImgTwo>
             </section>
             <section className={Style.containerContacto} >
-                <h3>
-                    ¿Y tú qué esperas para trabajar con nosotros?
-                </h3>
+                <Image src={fuimosParte} alt=''></Image>
                 <section className={Style.redesSociales}>
                     <div>
                         <Link className={Style.link} href={'https://www.facebook.com/profile.php?viewas=100000686899395&id=100091506581426'}  target="_blank">

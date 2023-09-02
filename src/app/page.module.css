@@ -84,7 +84,7 @@
   color: #000;
 }
 
-.sectionWhyChoose header strong{
+.sectionWhyChoose header strong {
   color: #b60000;
 }
 
@@ -127,7 +127,7 @@
   font-weight: 700;
 }
 
-.sectionWhyChoose main section strong{
+.sectionWhyChoose main section strong {
   color: #b60000;
 }
 
@@ -136,10 +136,9 @@
   border-radius: 0;
 }
 
-.sectionWhyChoose main section button{
+.sectionWhyChoose main section button {
   background: #000;
 }
-
 
 .sectionWhyChooseIcon {
   padding: 5px;
@@ -233,8 +232,8 @@
   place-items: center;
 }
 
-.left img{
-    max-width: 740px;
+.left img {
+  max-width: 740px;
 }
 .HomeText {
   max-width: 100%;
@@ -243,4 +242,55 @@
 .VideoHeader {
   width: 100%;
   max-width: 640px;
+}
+
+@media (max-width: 1400px) {
+  .bannerHome {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .left img {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 920px) {
+  .left img {
+    max-width: 100%;
+  }
+
+  .right video {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+.bannerHome{
+  margin-top: 70px;
+}
+}
+
+@media (max-width: 720px) {
+  .bannerHome {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .left img {
+    max-width: 80%;
+  }
+
+  .right video {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 560px) {
+  .bannerHome {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+
 }

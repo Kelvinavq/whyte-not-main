@@ -19,7 +19,7 @@ function Contacto(){
             <NavBar navBarStyle={navStyle}></NavBar>
             <div className={Style.form}>
             <Form></Form>
-            <div className="imgForm">
+            <div className={Style.imgForm}>
                 <Image src={img} alt=""></Image>
             </div>
 

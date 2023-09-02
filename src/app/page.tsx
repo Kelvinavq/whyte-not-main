@@ -118,16 +118,21 @@ export default function Page() {
       <NavBar navBarStyle={navStyle}></NavBar>
       <header className={Style.bannerHome}>
         <div className={Style.left}>
-          <Image src={HeaderHomeText} alt="" className={Style.HomeText} />
+          <Image
+            data-aos="fade-right"
+            src={HeaderHomeText}
+            alt=""
+            className={Style.HomeText}
+          />
         </div>
         <div className={Style.right}>
-          <video autoPlay muted loop className={Style.VideoHeader}>
+          <video data-aos="fade-left" autoPlay muted loop playsInline  className={Style.VideoHeader}>
             <source src="/video/banner/VideoHeader.mp4" />
           </video>
         </div>
       </header>
 
-      <section className={Style.sectionCards}>
+      <section className={Style.sectionCards} data-aos="fade-up">
         <div className={Style.containerButton}>
           <Button
             className={Style.button}
@@ -205,23 +210,23 @@ export default function Page() {
       </section>
 
       <section className={Style.sectionWhyChoose}>
-        <header>
-          <h3>
+        <header >
+          <h3 data-aos="fade-up">
             ¡SOMOS LA MEJOR OPCIÓN PARA <strong>IMPULSAR TU NEGOCIO!</strong>
           </h3>
         </header>
         <main>
-          <section>
-            <h4>
+          <section data-aos="fade-up">
+            <h4 >
               ¿Por qué elegir a <strong>Whyte not</strong>?
             </h4>
-            <Button variant="solid" colorScheme="red">
+            <Button  variant="solid" colorScheme="red">
               Cotiza con nosotros
             </Button>
           </section>
 
           <div className={Style.cards}>
-            <Card align="center" className={Style.sectionWhyChooseCard}>
+            <Card align="center" className={Style.sectionWhyChooseCard} data-aos="fade-up">
               <Image
                 src={starIcon}
                 alt=""
@@ -239,7 +244,7 @@ export default function Page() {
                 </Text>
               </CardBody>
             </Card>
-            <Card align="center" className={Style.sectionWhyChooseCard}>
+            <Card align="center" className={Style.sectionWhyChooseCard} data-aos="fade-up">
               <Image
                 src={likeIcon}
                 alt=""
@@ -257,7 +262,7 @@ export default function Page() {
                 </Text>
               </CardBody>
             </Card>
-            <Card align="center" className={Style.sectionWhyChooseCard}>
+            <Card align="center" className={Style.sectionWhyChooseCard} data-aos="fade-up">
               <Image
                 src={starIcon}
                 alt=""

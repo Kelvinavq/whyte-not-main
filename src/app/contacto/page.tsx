@@ -17,10 +17,10 @@ function Contacto(){
     return(
         <section className={Style.container}>
             <NavBar navBarStyle={navStyle}></NavBar>
-            <div className={Style.form}>
-            <Form></Form>
+            <div  className={Style.form}>
+            <Form ></Form>
             <div className={Style.imgForm}>
-                <Image src={img} alt=""></Image>
+                <Image src={img} alt="" data-aos="fade-left"></Image>
             </div>
 
             </div>

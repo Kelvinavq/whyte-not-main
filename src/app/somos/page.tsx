@@ -20,20 +20,20 @@ function Somos(){
     return(
         <section>
             <NavBar navBarStyle={navStyle}></NavBar>
-            <header  className={Style.header}>
+            <header  className={Style.header} >
 
             </header>
             <main className={Style.mainCardAcerca}>
                 <section className={Style.containerCardAcerca}>
-                <Image src={proposito} alt=''></Image>
+                <Image src={proposito} alt='' data-aos="fade-right"></Image>
 
-                    <Card align='center' className={Style.cardAcerca} >
+                    <Card align='center' className={Style.cardAcerca}  >
                         <CardBody>
-                            <Box data-aos="fade-right" >
-                                <Text  fontSize='sm' className={Style.cardAcercaText}>
+                            <Box  >
+                                <Text  fontSize='sm' className={Style.cardAcercaText} data-aos="fade-up">
                                     Materializar, asesorar y desarrollar las ideas de nuestros clientes, potenciando negocios en el entorno digital, para mejorar la calidad de vida en Chile, aunque no tenemos fronteras.
                                 </Text>
-                                <Text  fontSize='sm' className={Style.cardAcercaText}>
+                                <Text  fontSize='sm' className={Style.cardAcercaText} data-aos="fade-up">
                                 Proveemos diversos servicios como la gestión de redes sociales, diseño de identidad de marca y construcción de aplicaciones móviles o sitios web, así como también otras herramientas necesarias para tus proyectos digitales.
                                 </Text>
                             </Box>
@@ -41,7 +41,7 @@ function Somos(){
                     </Card>
                 </section>
                 <section className={Style.containerDifereciadores}>
-                    <Heading size='md' className={Style.DifereciadoresTitle} textTransform='uppercase'>
+                    <Heading size='md' className={Style.DifereciadoresTitle} textTransform='uppercase' data-aos="fade-up">
                         Nuestros principales diferenciadores
                     </Heading>
                     <SimpleGrid data-aos="fade-up"   spacing={4} templateColumns='repeat(auto-fill, minmax(30%, 1fr))' className={Style.containerCardDifereciadores}>

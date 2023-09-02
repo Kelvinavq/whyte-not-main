@@ -53,8 +53,8 @@ function Form(){
     };
 
     return(
-        <section className={Style.containerCard}>
-            <Card className={Style.card} align='center'>
+        <section className={Style.containerCard} data-aos="fade-right">
+            <Card className={Style.card} align='center' >
                 <CardHeader>
                     <Heading size='md' textTransform='uppercase' className={Style.formTitle}>Todo lo hacemos posible, sólo contáctanos y cuéntanos sobre tu proyecto.</Heading>
                 </CardHeader>

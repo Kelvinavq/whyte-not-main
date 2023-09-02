@@ -79,17 +79,31 @@ function NavBar({ navBarStyle }: { navBarStyle: any }) {
           </li>
 
           <li>
-            <Link className={Style.link} style={navBarStyle.letter} href={"https://www.instagram.com/whytenot.marketing/"}>
+            <Link
+              className={Style.link}
+              style={navBarStyle.letter}
+              href={"https://www.instagram.com/whytenot.marketing/"}
+            >
               <InstagramIcon />
             </Link>
           </li>
           <li>
-            <Link className={Style.link} style={navBarStyle.letter} href={"https://www.facebook.com/people/Whyte-not/100091506581426/"}>
+            <Link
+              className={Style.link}
+              style={navBarStyle.letter}
+              href={
+                "https://www.facebook.com/people/Whyte-not/100091506581426/"
+              }
+            >
               <FacebookIcon />
             </Link>
           </li>
           <li>
-            <Link className={Style.link} style={navBarStyle.letter} href={"https://wa.link/3p9y3w"}>
+            <Link
+              className={Style.link}
+              style={navBarStyle.letter}
+              href={"https://wa.link/3p9y3w"}
+            >
               <WhatsAppIcon />
             </Link>
           </li>
@@ -120,6 +134,7 @@ function NavBar({ navBarStyle }: { navBarStyle: any }) {
               <MenuItem as="a" href={"/contacto"} icon={<AiOutlinePhone />}>
                 Contacto
               </MenuItem>
+              
             </MenuList>
           </Menu>
         </div>

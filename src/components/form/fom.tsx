@@ -129,7 +129,7 @@ function Form(){
                                 onChange={(e) => setComment(e.target.value)}
                             />
                         </div>
-                        <Button colorScheme='red' type='submit'>Enviar</Button>
+                        <Button className={Style.button} type='submit'>Enviar</Button>
                     </form>
                 </CardBody>
             </Card>

@@ -25,6 +25,7 @@ import ButtomWhat from "@/components/buttomWhat/buttomWhat";
 import { Montserrat } from "next/font/google";
 
 import HeaderHomeText from "../../public/img/home/HeaderHomeText.png";
+import Aos from "aos";
 
 const montserrat = Montserrat({
   weight: "variable",
@@ -32,6 +33,8 @@ const montserrat = Montserrat({
 });
 
 export default function Page() {
+  Aos.init();
+
   const [buttonSelected, setButtonSelected] = useState(1);
   const colorTransparent = { background: "transparent" };
   const colorRed = { background: "linear-gradient(#b60000,#b60000)" };
@@ -126,14 +129,21 @@ export default function Page() {
           />
         </div>
         <div className={Style.right}>
-          <video data-aos="fade-left" autoPlay muted loop playsInline  className={Style.VideoHeader}>
+          <video
+            data-aos="fade-left"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className={Style.VideoHeader}
+          >
             <source src="/video/banner/VideoHeader.mp4" />
           </video>
         </div>
       </header>
 
-      <section className={Style.sectionCards} data-aos="fade-up">
-        <div className={Style.containerButton}>
+      <section className={Style.sectionCards} data-aos="fade-left">
+        <div className={Style.containerButton} >
           <Button
             className={Style.button}
             style={colorButtonSelected[0]}
@@ -162,11 +172,7 @@ export default function Page() {
             SCP
           </Button>
         </div>
-        <section
-          className={Style.containerCard}
-          data-aos="flip-left"
-          data-aos-duration="2000"
-        >
+        <section className={Style.containerCard} data-aos="fade-up">
           <Card align="center" className={Style.card}>
             <CardHeader className={Style.cardHeader}>
               <div className={Style.cardHeaderTitle}>
@@ -210,23 +216,27 @@ export default function Page() {
       </section>
 
       <section className={Style.sectionWhyChoose}>
-        <header >
+        <header>
           <h3 data-aos="fade-up">
             ¡SOMOS LA MEJOR OPCIÓN PARA <strong>IMPULSAR TU NEGOCIO!</strong>
           </h3>
         </header>
         <main>
           <section data-aos="fade-up">
-            <h4 >
+            <h4>
               ¿Por qué elegir a <strong>Whyte not</strong>?
             </h4>
-            <Button  variant="solid" colorScheme="red">
+            <Button variant="solid" colorScheme="red">
               Cotiza con nosotros
             </Button>
           </section>
 
           <div className={Style.cards}>
-            <Card align="center" className={Style.sectionWhyChooseCard} data-aos="fade-up">
+            <Card
+              align="center"
+              className={Style.sectionWhyChooseCard}
+              data-aos="fade-up"
+            >
               <Image
                 src={starIcon}
                 alt=""
@@ -244,7 +254,11 @@ export default function Page() {
                 </Text>
               </CardBody>
             </Card>
-            <Card align="center" className={Style.sectionWhyChooseCard} data-aos="fade-up">
+            <Card
+              align="center"
+              className={Style.sectionWhyChooseCard}
+              data-aos="fade-up"
+            >
               <Image
                 src={likeIcon}
                 alt=""
@@ -262,7 +276,11 @@ export default function Page() {
                 </Text>
               </CardBody>
             </Card>
-            <Card align="center" className={Style.sectionWhyChooseCard} data-aos="fade-up">
+            <Card
+              align="center"
+              className={Style.sectionWhyChooseCard}
+              data-aos="fade-up"
+            >
               <Image
                 src={starIcon}
                 alt=""

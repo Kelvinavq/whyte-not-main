@@ -39,6 +39,9 @@
     align-items: center;
     overflow-x: hidden;
 }
+.sectionService img{
+    max-width: 200px;
+}
 
 .sectionService div h2{
     color: #b60000;
@@ -73,7 +76,7 @@
     background: linear-gradient(white,rgb(245, 245, 255));
     display: flex;
     justify-content:space-between;
-    align-items: end;
+    align-items: center;
     padding:20px 40px;
 }
 .sectionServiceOne div h2{
@@ -213,4 +216,9 @@
         width: 40%;
         margin-bottom: 20px;
     }
+}
+
+.sectionServiceOne img, 
+.sectionServiceTwo img{
+    max-width: 200px;
 }

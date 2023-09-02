@@ -1,0 +1,246 @@
+.banner {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.title {
+  margin: 20px 10px;
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 400;
+  color: black;
+}
+.sectionCards {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerButton {
+  display: flex;
+  background: linear-gradient(#c4c2c2, #868686);
+  border-radius: 45px;
+}
+.button {
+  border-radius: 45px !important;
+  padding: 10px 50px !important;
+  color: white;
+  border: none !important;
+  cursor: pointer;
+}
+
+.containerCard {
+  margin: 20px 15%;
+}
+.card {
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cardHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #b60000;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+}
+
+.cardHeaderTitle {
+  display: flex;
+  align-items: center;
+}
+.cardHeaderTitle > * {
+  margin: 0px 10px;
+}
+
+.cardSectionList {
+  margin-top: 20px;
+}
+
+.cardSectionListContent {
+  margin-top: 5px;
+}
+
+.sectionWhyChoose {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.sectionWhyChoose header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionWhyChoose header > * {
+  text-align: center;
+  color: #000;
+}
+
+.sectionWhyChoose header strong{
+  color: #b60000;
+}
+
+.sectionWhyChoose header Button {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  font-size: 0.7em;
+}
+
+.sectionWhyChoose header Button:hover {
+  background-color: rgb(253, 210, 210);
+}
+.sectionWhyChoose header:first-child {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+.sectionWhyChoose main {
+  margin: 30px 0px;
+  width: 70%;
+}
+
+.sectionWhyChoose main {
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.sectionWhyChoose main > * {
+  margin: 0px 20px;
+}
+
+.sectionWhyChoose main section h4 {
+  margin: 20px 0px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.sectionWhyChoose main section strong{
+  color: #b60000;
+}
+
+.sectionWhyChooseCard {
+  border: 10px solid #b60000;
+  border-radius: 0;
+}
+
+.sectionWhyChoose main section button{
+  background: #000;
+}
+
+
+.sectionWhyChooseIcon {
+  padding: 5px;
+  position: absolute;
+  top: -25px;
+  left: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.sectionWhyChooseCardTitle {
+  color: black;
+}
+
+.sectionWhyChooseCardContent {
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 1.5em;
+  }
+  .sectionWhyChoose main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sectionWhyChoose main > * {
+    margin: 20px;
+  }
+  .cardHeaderTitle {
+    font-size: 1em;
+  }
+  .sectionWhyChoose h3 {
+    font-size: 1em;
+  }
+  .cardHeaderTitle h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 560px) {
+  .containerCard {
+    margin: 20px 2%;
+  }
+  .title {
+    font-size: 1.1em;
+  }
+  .cardHeader {
+    flex-direction: column;
+  }
+  .button {
+    padding: 5px 15px !important;
+    font-size: 0.7em;
+  }
+  .cardHeaderTitle {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardHeaderTitle h2 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .cardContentText {
+    text-align: center;
+  }
+  .sectionWhyChooseIcon {
+    top: -35px;
+  }
+}
+
+.bannerHome {
+  margin-top: 90px;
+  width: 100%;
+  height: 520px;
+  background-image: url("../../public/img/home/FondoHeaderHome.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.left,
+.right {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.left img{
+    max-width: 740px;
+}
+.HomeText {
+  max-width: 100%;
+}
+
+.VideoHeader {
+  width: 100%;
+  max-width: 640px;
+}

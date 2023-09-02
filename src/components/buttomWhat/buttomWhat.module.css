@@ -1,0 +1,25 @@
+.buttomWhatsapp{
+    position:fixed;
+    border-radius: 50%;
+    background-color: rgb(8, 148, 8);
+    padding: 23.797px 15px;
+    right:20px;
+    bottom:20px;
+    z-index:5;
+}
+
+.link{
+    text-decoration:none;
+    font-size:1.8em;
+}
+
+@media (max-width:560px) {
+    .buttomWhatsapp{
+        padding: 18.797px 10px;
+    }
+    
+    .link{
+        text-decoration:none;
+        font-size:1.5em;
+    }
+}

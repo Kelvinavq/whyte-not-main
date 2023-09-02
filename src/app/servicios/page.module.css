@@ -1,0 +1,215 @@
+.banner{
+    margin-top: 90px;
+    width: 100%;
+}
+.link{
+    text-decoration:none;
+}
+.link:hover{
+    text-decoration:none;
+}
+.buttonBanner{
+    background: transparent;
+    position: absolute;
+    top: 27vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+.buttonBanner button{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: min-content;
+    border: none;
+    border-radius: 0px;
+    color: white;
+    background: #b60000;
+}
+.buttonBanner button:hover{
+    color: #b60000;
+    background: white !important;
+}
+
+.sectionService{
+    background: linear-gradient(white,rgb(245, 245, 255));
+    display: flex;
+    padding:20px 40px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.sectionService div h2{
+    color: #b60000;
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.sectionService div p{
+    color: #b60000;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0px 10px;
+    z-index: 5;
+}
+.sectionServiceContent{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.sectionServiceContent h2{
+    font-size: 2em ;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+.sectionServiceContent > *{
+    margin: 10px 0px !important;
+    text-align: end;
+}
+.sectionServiceOne{
+    background: linear-gradient(white,rgb(245, 245, 255));
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+    padding:20px 40px;
+}
+.sectionServiceOne div h2{
+    color: #b60000;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.sectionServiceOne div p{
+    color: #b60000;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: end;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.imgService{
+    z-index: 5;
+    margin: 0px 20px;
+}
+
+.sectionServiceTwo{
+    background: black;
+    padding:20px 40px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.sectionServiceTwo div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.sectionServiceTwo div h2{
+    font-size: 2em ;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+.sectionServiceTwo div > *{
+    margin: 10px 0px !important;
+    text-align: start;
+}
+.sectionServiceTwo div h2{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+.sectionServiceTwo div p{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: sta;
+    margin: 0px 10px;
+    z-index: 5;
+}
+
+
+@media (max-width: 900px) {
+    .buttonBanner{
+        font-size: 1em;
+        padding: 7px 15px;
+    }
+
+    .sectionService div h2{
+        font-size: 1.5em;
+    }
+    
+    .sectionService div p{
+        font-size: 1em;
+    }
+    .sectionServiceOne div h2{
+        font-size: 1.5em;
+    }
+    
+    .sectionServiceOne div p{
+        font-size: 1em;
+    }
+    .sectionServiceTwo div h2{
+        font-size: 1.5em;
+    }
+    
+    .sectionServiceTwo div p{
+        font-size: 1em;
+    }
+    .imgService{
+        width: 30%;
+    }
+}
+
+@media (max-width: 560px) {
+    .buttonBanner{
+        font-size: 0.5em;
+        padding: 0px;
+    }
+    .sectionService div h2{
+        font-size: 1.2em;
+    }
+    
+    .sectionService div p{
+        font-size: 0.9em;
+        text-align: justify;
+    }
+    .sectionServiceOne div h2{
+        font-size: 1.2em;
+    }
+    
+    .sectionServiceOne div p{
+        font-size: 0.9em;
+        text-align: justify;
+    }
+    .sectionServiceTwo div h2{
+        font-size: 1.2em;
+    }
+    
+    .sectionServiceTwo div p{
+        font-size: 0.9em;
+        text-align: justify;
+    }
+    .sectionService{
+        flex-direction: column;
+    }
+    .sectionServiceOne{
+        flex-direction: column;
+    }
+    .sectionServiceTwo{
+        flex-direction: column-reverse;
+    }
+    .imgService{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+}

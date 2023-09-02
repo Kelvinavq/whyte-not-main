@@ -1,0 +1,194 @@
+.header{
+    width: 100%;
+    height: 620px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../../public/img/somos/somoBanner.png");
+}
+
+.imgBanner{
+    margin-top: 50px;
+    width:100%;
+}
+.link{
+    text-decoration:none;
+}
+.link:hover{
+    text-decoration:none;
+}
+.buttonBanner{
+    background: transparent;
+    position: absolute;
+    top: 40vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+.buttonBanner button{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: min-content;
+    border: none;
+    border-radius: 0px;
+    color: hsl(0, 0%, 100%);
+    background: black;
+}
+.buttonBanner button:hover{
+    color: #b60000;
+    background: white !important;
+}
+.buttonBanner button:hover{
+    color: #b60000;
+    background: white !important;
+}
+.banner{
+    background: linear-gradient(#b60000,#b60000);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.banner h2{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.imgLineasFondo{
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+}
+.imgHeader{
+    z-index: 5;
+}
+.containerCardAcerca{
+    padding: 30px 0px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardAcerca{
+    width: 80%;
+    box-shadow: none;
+    background: #cfcfcf;
+}
+.cardAcercaTitle{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: black;
+}
+.cardAcercaHeader{
+    display: flex; 
+    align-items: center;
+}
+.cardAcercaHeader > *{
+    margin: 0px 10px ;
+}
+.cardAcercaText{
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 10px 10px 
+}
+
+.containerDifereciadores{
+    padding: 30px 30px ;
+    place-items:center
+
+}
+
+.DifereciadoresTitle{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: black;
+}
+.containerCardDifereciadores{
+    margin-top:30px
+}
+.cardDifereciadores{
+    background:linear-gradient(#b60000,#b60000);
+    color:rgb(255, 255, 255);
+    text-align:center;
+}
+.cardDifereciadoresText{
+    font-size: 1.15em;
+}
+
+.mainCardAcerca{
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 900px) {
+    .buttonBanner{
+        font-size: 1em;
+        padding: 7px 15px;
+    }
+    .banner h2{
+        font-size: 1.6em;
+    }
+    .imgLineasFondo{
+        width: 70%;
+    }
+    .imgHeader{
+        width: 50%;
+    }
+    .cardDifereciadoresText{
+        font-size: 1em;
+    }
+    .cardAcercaText{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 560px) {
+    .buttonBanner{
+        font-size: 0.8em;
+        padding: 3px 10px;
+    }
+    .banner h2{
+        font-size: 0.9em;
+    }
+    .imgLineasFondo{
+        width: 70%;
+    }
+    .imgHeader{
+        width: 50%;
+    }
+    .cardDifereciadoresText{
+        font-size: 1em;
+    }
+    .cardAcercaText{
+        font-size: 1em;
+    }
+    .DifereciadoresTitle{
+        font-size: 1.1em;
+    }
+    .containerCardDifereciadores{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardDifereciadores h2 {
+        font-size: 1.1em;
+    }
+    .cardAcercaTitle{
+        font-size: 1.15em;
+        padding: 0px;
+    }
+    .imgHeader{
+        width: 50%;
+    }
+    .cardAcercaText{
+        font-size: 1em;
+        text-align: center;
+    }
+    .cardAcercaHeader{
+        padding-bottom:0px ;
+    }
+}

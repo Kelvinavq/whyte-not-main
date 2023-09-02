@@ -1,0 +1,133 @@
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../../public/img/home/FondoHeaderHome.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 0px 0px ;
+    width: 100%;
+}
+.footer section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;   
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer section p{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+}
+
+.footer section ul li{
+    list-style: none;
+}
+.footer section img{
+    position: absolute;
+    bottom: 0px;
+}
+.footer section >*{
+    padding: 20px 20px;
+}
+
+.footerListEmail{
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+}
+
+.footerLinkVentas {
+    display: flex;
+    align-items: center;
+}
+
+.footerlink{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.footerlink:hover{
+    color:#cd2222;
+    text-decoration: none;
+}
+.footerMethodPay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footerMethodPay ul {
+    display: flex;
+}
+.footerMethodPay ul li{
+    font-size: 2em;
+    margin-right: 10px;
+}
+.footerMethodPay ul li:last-child{
+    font-size: 1.4em;
+    margin-right: 0px;
+}
+.footerMethodPay p{
+    margin-bottom:10px;
+}
+
+.footerRedes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerRedes p{
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.footerRedes ul{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerRedes ul li{
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+.footerRedes ul li:last-child{
+    margin-right: 0px;
+}
+
+@media (max-width: 900px) {
+    .footer section >*{
+        padding: 5px 5px;
+    }
+    .footerRedes ul li{
+        font-size: 1.2em;
+    }
+    .footerMethodPay ul li{
+        font-size: 1.5em;
+    }
+    .footerMethodPay ul li:last-child{
+        font-size: 1em;
+    }
+    .footer section p{
+        font-size: 1em;
+    }
+    .footerlink{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer section{
+        flex-direction: column;
+    }
+    .footerListEmail li {
+        text-align: center;
+        font-size: 0.9em;
+    }
+}

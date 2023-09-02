@@ -206,69 +206,76 @@ export default function Page() {
 
       <section className={Style.sectionWhyChoose}>
         <header>
-          <h3>¡SOMOS LA MEJOR OPCIÓN PARA <strong>IMPULSAR TU NEGOCIO!</strong></h3>
+          <h3>
+            ¡SOMOS LA MEJOR OPCIÓN PARA <strong>IMPULSAR TU NEGOCIO!</strong>
+          </h3>
         </header>
         <main>
           <section>
-            <h4>¿Por qué elegir a <strong>Whyte not</strong>?</h4>
+            <h4>
+              ¿Por qué elegir a <strong>Whyte not</strong>?
+            </h4>
             <Button variant="solid" colorScheme="red">
               Cotiza con nosotros
             </Button>
           </section>
-          <Card align="center" className={Style.sectionWhyChooseCard}>
-            <Image
-              src={starIcon}
-              alt=""
-              className={Style.sectionWhyChooseIcon}
-            />
-            <CardHeader>
-              <Heading size="md" className={Style.sectionWhyChooseCardTitle}>
-                EXPERIENCIA
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text className={Style.sectionWhyChooseCardContent}>
-                Contamos con todos los conocimientos y la experiencia necesaria
-                para poder materializar e impulsar tu negocio.
-              </Text>
-            </CardBody>
-          </Card>
-          <Card align="center" className={Style.sectionWhyChooseCard}>
-            <Image
-              src={likeIcon}
-              alt=""
-              className={Style.sectionWhyChooseIcon}
-            />
-            <CardHeader>
-              <Heading size="md" className={Style.sectionWhyChooseCardTitle}>
-                COMPROMISO
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text className={Style.sectionWhyChooseCardContent}>
-                En Whyte Not nos comprometemos contigo y tu proyecto,
-                involucrándonos como si fuera nuestro.
-              </Text>
-            </CardBody>
-          </Card>
-          <Card align="center" className={Style.sectionWhyChooseCard}>
-            <Image
-              src={starIcon}
-              alt=""
-              className={Style.sectionWhyChooseIcon}
-            />
-            <CardHeader>
-              <Heading size="md" className={Style.sectionWhyChooseCardTitle}>
-                TE VALORAMOS
-              </Heading>
-            </CardHeader>
-            <CardBody>
-              <Text className={Style.sectionWhyChooseCardContent}>
-                ¡Tu confianza no tiene precio! Nosotros la valoramos al dejar tu
-                proyecto en nuestras manos.
-              </Text>
-            </CardBody>
-          </Card>
+
+          <div className={Style.cards}>
+            <Card align="center" className={Style.sectionWhyChooseCard}>
+              <Image
+                src={starIcon}
+                alt=""
+                className={Style.sectionWhyChooseIcon}
+              />
+              <CardHeader>
+                <Heading size="md" className={Style.sectionWhyChooseCardTitle}>
+                  EXPERIENCIA
+                </Heading>
+              </CardHeader>
+              <CardBody>
+                <Text className={Style.sectionWhyChooseCardContent}>
+                  Contamos con todos los conocimientos y la experiencia
+                  necesaria para poder materializar e impulsar tu negocio.
+                </Text>
+              </CardBody>
+            </Card>
+            <Card align="center" className={Style.sectionWhyChooseCard}>
+              <Image
+                src={likeIcon}
+                alt=""
+                className={Style.sectionWhyChooseIcon}
+              />
+              <CardHeader>
+                <Heading size="md" className={Style.sectionWhyChooseCardTitle}>
+                  COMPROMISO
+                </Heading>
+              </CardHeader>
+              <CardBody>
+                <Text className={Style.sectionWhyChooseCardContent}>
+                  En Whyte Not nos comprometemos contigo y tu proyecto,
+                  involucrándonos como si fuera nuestro.
+                </Text>
+              </CardBody>
+            </Card>
+            <Card align="center" className={Style.sectionWhyChooseCard}>
+              <Image
+                src={starIcon}
+                alt=""
+                className={Style.sectionWhyChooseIcon}
+              />
+              <CardHeader>
+                <Heading size="md" className={Style.sectionWhyChooseCardTitle}>
+                  TE VALORAMOS
+                </Heading>
+              </CardHeader>
+              <CardBody>
+                <Text className={Style.sectionWhyChooseCardContent}>
+                  ¡Tu confianza no tiene precio! Nosotros la valoramos al dejar
+                  tu proyecto en nuestras manos.
+                </Text>
+              </CardBody>
+            </Card>
+          </div>
         </main>
       </section>
       <ButtomWhat></ButtomWhat>

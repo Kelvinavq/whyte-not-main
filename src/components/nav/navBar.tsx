@@ -98,15 +98,6 @@ function NavBar({ navBarStyle }: { navBarStyle: any }) {
               <FacebookIcon />
             </Link>
           </li>
-          <li>
-            <Link
-              className={Style.link}
-              style={navBarStyle.letter}
-              href={"https://wa.link/3p9y3w"}
-            >
-              <WhatsAppIcon />
-            </Link>
-          </li>
         </ul>
         <div className={Style.menuPhone}>
           <Menu>

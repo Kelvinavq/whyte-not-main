@@ -34,7 +34,7 @@ const montserrat = Montserrat({
 export default function Page() {
   const [buttonSelected, setButtonSelected] = useState(1);
   const colorTransparent = { background: "transparent" };
-  const colorRed = { background: "linear-gradient(#ff3030,#ca1111)" };
+  const colorRed = { background: "linear-gradient(#b60000,#b60000)" };
   const [colorButtonSelected, setColorButtonSelected] = useState([
     colorRed,
     colorTransparent,

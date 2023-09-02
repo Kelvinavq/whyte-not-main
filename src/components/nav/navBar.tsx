@@ -4,8 +4,7 @@ import Link from 'next/link';
 import * as React from 'react';
 import Image from 'next/image';
 import Style from './navBar.module.css'
-import LogoWhite from '../../../public/img/logo/white.png'
-import LogoBlackRed from '../../../public/img/logo/blackRed.png'
+import LogoWhite from '../../../public/img/logo/white-logo.png'
 import { AiOutlineMenu, AiOutlinePhone} from 'react-icons/ai';
 import { BsPuzzle } from "react-icons/bs";
 import { RiCustomerService2Line } from "react-icons/ri";
@@ -16,7 +15,7 @@ import { IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/rea
 
 function NavBar ({navBarStyle}:{navBarStyle:any}){
     const logo = (color:string)=>{
-        if(color == "white"){{ return LogoWhite }}else if (color == "blackRed") { return LogoBlackRed}
+        if(color == "white"){{ return LogoWhite }}else if (color == "blackRed") { return LogoWhite}
         return LogoWhite;
     }
     return(

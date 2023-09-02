@@ -4,6 +4,8 @@
     position: fixed;
     top:0px;
     z-index: 10;
+    border-bottom: 1px solid black;
+    background: #000 !important;
 }
 
 .nav{
@@ -30,6 +32,7 @@
     font-size: 1.2em;
     font-weight: 500;
     cursor: pointer;
+    color: white !important;
 }
 
 .link:hover {
@@ -43,7 +46,7 @@
     border: none;
 }
 .menuPhoneIcon{
-    color: black;
+    color: white;
     font-size: 1.5em;
 }
 

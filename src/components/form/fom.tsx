@@ -1,4 +1,3 @@
-"use client";
 import * as React from "react";
 import Style from "./form.module.css";
 import {
@@ -89,7 +88,7 @@ function Form() {
             textTransform="uppercase"
             className={Style.formTitle}
           >
-            Todo lo hacemos posibleeee, sólo contáctanos y cuéntanos sobre tu
+            Todo lo hacemos posible, sólo contáctanos y cuéntanos sobre tu
             proyecto.
           </Heading>
         </CardHeader>

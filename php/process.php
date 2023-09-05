@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
     $phone = $_POST["phone"];
     $comment = $_POST["comment"];
-    $service = $_POST["service"]; // Asegúrate de que coincida con el nombre del campo en tu formulario HTML
+    $service = $_POST["services"]; // Corregido para que coincida con el nombre del campo en el formulario HTML
 
     // Realiza cualquier procesamiento adicional que necesites con los datos del formulario
     // ...

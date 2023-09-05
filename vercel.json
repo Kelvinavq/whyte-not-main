@@ -7,9 +7,14 @@
     ],
     "routes": [
       {
-        "src": "/api/php/process.php", 
+        "src": "/php/process.php", 
         "methods": ["POST"], 
-        "dest": "/path-to-your-process-php-file.php"
+        "dest": "/php/process.php" 
+      },
+      {
+        "src": "/api/form", 
+        "methods": ["POST"], 
+        "dest": "/src/components/form/fom.tsx" 
       }
     ]
   }

@@ -1,7 +1,9 @@
-import React from 'react'
+"use client";
+import * as React from "react";
 
-export const page = () => {
-  return (
-    <div>page</div>
-  )
+
+export default function Page() {
+
+
+  return <h1>Hola</h1>;
 }

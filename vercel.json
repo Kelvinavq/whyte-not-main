@@ -1,22 +1,10 @@
 {
-    "crons": [
-      {
-        "path": "/api/cron",
-        "schedule": "0 10 * * *"
-      }
-    ],
+    "version": 2,
+    "builds": [{ "src": "api/form-api.js", "use": "@vercel/node" }],
     "routes": [
-      {
-        "src": "/php/process.php", 
-        "methods": ["POST"], 
-        "dest": "/php/process.php" 
-      },
-      {
-        "src": "/api/form",
-        "methods": ["POST"],
-        "dest": "/api/form-api.js"
-      }
-      
+      { "handle": "filesystem" },
+      { "src": "/php/(.*)", "dest": "/php/$1" },
+      { "src": "/api/form", "dest": "/api/form-api.js" }
     ]
   }
   

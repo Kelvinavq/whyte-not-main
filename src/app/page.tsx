@@ -142,7 +142,7 @@ export default function Page() {
         </div>
       </header>
 
-      <section className={Style.sectionCards} data-aos="fade-left">
+      <section data-aos="fade-left" className={Style.sectionCards} >
         <div className={Style.containerButton} >
           <Button
             className={Style.button}

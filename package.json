@@ -20,11 +20,14 @@
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "aos": "^3.0.0-beta.6",
+    "body-parser": "^1.19.0",
     "boxicons": "^2.1.4",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "express": "^4.17.1",
     "framer-motion": "^10.12.16",
     "next": "13.4.4",
+    "nodemailer": "^6.9.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
@@ -33,6 +36,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
+    "@types/nodemailer": "^6.4.9",
     "@types/react-slick": "^0.23.10"
   }
 }

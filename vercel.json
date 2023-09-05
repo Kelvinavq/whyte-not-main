@@ -9,12 +9,12 @@
       {
         "src": "/php/process.php", 
         "methods": ["POST"], 
-        "dest": "/php/process.php" 
+        "dest": "https://whyte-not-main-zhqi.vercel.app/php/process.php" 
       },
       {
         "src": "/api/form", 
         "methods": ["POST"], 
-        "dest": "/src/components/form/fom.tsx" 
+        "dest": "https://whyte-not-main-zhqi.vercel.app/src/components/form/fom.tsx" 
       }
     ]
   }

@@ -56,7 +56,7 @@ function Form() {
     const formData = new FormData(e.currentTarget);
 
     try {
-      const response = await fetch("/php/process.php", {
+      const response = await fetch("../../php/process.php", {
         method: "POST",
         body: formData,
       });
@@ -95,7 +95,7 @@ function Form() {
         </CardHeader>
         <CardBody className={Style.containerForm}>
           <form
-            action="/php/process.php"
+            action="../../php/process.php"
             method="post"
             onSubmit={handleSubmit}
             className={Style.form}

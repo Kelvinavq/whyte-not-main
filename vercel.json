@@ -1,0 +1,16 @@
+{
+    "crons": [
+      {
+        "path": "/api/cron",
+        "schedule": "0 10 * * *"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/php/process.php", 
+        "methods": ["POST"], 
+        "dest": "/path-to-your-process-php-file.php"
+      }
+    ]
+  }
+  

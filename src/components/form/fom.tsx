@@ -52,32 +52,32 @@ function Form() {
   ];
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+    // e.preventDefault();
+    // const formData = new FormData(e.currentTarget);
 
-    try {
-      const response = await fetch("http://localhost/whyte-not-main/php/process.php", {
-        method: "POST",
-        body: formData,
-      });
+    // try {
+    //   const response = await fetch("/php/process.php", {
+    //     method: "POST",
+    //     body: formData,
+    //   });
 
-      if (response.ok) {
-        const data = await response.json();
-        if (data.success) {
-          // Aquí puedes manejar una respuesta exitosa, como mostrar un mensaje de éxito al usuario.
-          alert("¡Formulario enviado con éxito!");
-        } else {
-          // En caso de error, puedes mostrar un mensaje de error.
-          alert("Hubo un error al enviar el formulario.");
-        }
-      } else {
-        // En caso de una respuesta HTTP no exitosa, puedes manejarlo aquí.
-        alert("Error en la solicitud al servidor.");
-      }
-    } catch (error) {
-      // En caso de un error de red u otro error, puedes manejarlo aquí.
-      console.error("Error al enviar el formulario:", error);
-    }
+    //   if (response.ok) {
+    //     const data = await response.json();
+    //     if (data.success) {
+    //       // Aquí puedes manejar una respuesta exitosa, como mostrar un mensaje de éxito al usuario.
+    //       alert("¡Formulario enviado con éxito!");
+    //     } else {
+    //       // En caso de error, puedes mostrar un mensaje de error.
+    //       alert("Hubo un error al enviar el formulario.");
+    //     }
+    //   } else {
+    //     // En caso de una respuesta HTTP no exitosa, puedes manejarlo aquí.
+    //     alert("Error en la solicitud al servidor.");
+    //   }
+    // } catch (error) {
+    //   // En caso de un error de red u otro error, puedes manejarlo aquí.
+    //   console.error("Error al enviar el formulario:", error);
+    // }
   };
 
   return (
@@ -95,7 +95,7 @@ function Form() {
         </CardHeader>
         <CardBody className={Style.containerForm}>
           <form
-            action="http://localhost/whyte-not-main/php/process.php"
+            action="/php/process.php"
             method="post"
             onSubmit={handleSubmit}
             className={Style.form}

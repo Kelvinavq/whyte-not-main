@@ -89,7 +89,7 @@ function Form() {
             textTransform="uppercase"
             className={Style.formTitle}
           >
-            Todo lo hacemos posible, sólo contáctanos y cuéntanos sobre tu
+            Todo lo hacemos posibleee, sólo contáctanos y cuéntanos sobre tu
             proyecto.
           </Heading>
         </CardHeader>

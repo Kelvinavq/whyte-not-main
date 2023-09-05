@@ -9,13 +9,14 @@
       {
         "src": "/php/process.php", 
         "methods": ["POST"], 
-        "dest": "https://whyte-not-main-zhqi.vercel.app/php/process.php" 
+        "dest": "/php/process.php" 
       },
       {
-        "src": "/api/form", 
-        "methods": ["POST"], 
-        "dest": "https://whyte-not-main-zhqi.vercel.app/src/components/form/fom.tsx" 
+        "src": "/api/form",
+        "methods": ["POST"],
+        "dest": "/api/form-api.js"
       }
+      
     ]
   }
   

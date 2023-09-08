@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', 'https://whytenot.com');
     next();
   });
 
@@ -55,5 +55,5 @@ app.post('/send-email', (req, res) => {
 });
 
 app.listen(3001, () => {
-  console.log('Servidor iniciado en http://localhost:3001');
+  console.log('Servidor iniciado en https://whytenot.com');
 });

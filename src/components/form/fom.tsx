@@ -56,7 +56,7 @@ function Form() {
     const formData = new FormData(e.currentTarget);
   
     try {
-      const response = await fetch('http://localhost:3001/send-email', {
+      const response = await fetch('https://whytenot.com/send-email', {
         method: 'POST',
         body: formData,
       });

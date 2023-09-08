@@ -4,17 +4,5 @@
         "path": "/api/cron",
         "schedule": "0 10 * * *"
       }
-    ],
-    "routes": [
-        {
-          "src": "/api/form",
-          "methods": ["POST"],
-          "dest": "/api/form-api.js"
-        },
-        {
-          "src": "/php/(.*)",
-          "dest": "/php/$1"
-        }
-      ]
-      
+    ]
   }

@@ -52,33 +52,32 @@ function Form() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+  
     const formData = new FormData(e.currentTarget);
-
+  
     try {
-      const response = await fetch("/php/process.php", {
-        method: "POST",
+      const response = await fetch('http://localhost:3001/send-email', {
+        method: 'POST',
         body: formData,
       });
-
+  
+      console.log('Response:', response); // Agregar este log
+  
       if (response.ok) {
         const data = await response.json();
         if (data.success) {
-          // Aquí puedes manejar una respuesta exitosa, como mostrar un mensaje de éxito al usuario.
-          alert("¡Formulario enviado con éxito!");
+          alert('¡Formulario enviado con éxito!');
         } else {
-          // En caso de error, puedes mostrar un mensaje de error.
-          alert("Hubo un error al enviar el formulario.");
+          alert('Hubo un error al enviar el formulario.');
         }
       } else {
-        // En caso de una respuesta HTTP no exitosa, puedes manejarlo aquí.
-        alert("Error en la solicitud al servidor.");
+        alert('Error en la solicitud al servidor.');
       }
     } catch (error) {
-      // En caso de un error de red u otro error, puedes manejarlo aquí.
-      console.error("Error al enviar el formulario:", error);
+      console.error('Error al enviar el formulario:', error);
     }
   };
-
+  
   return (
     <section className={Style.containerCard} data-aos="fade-right">
       <Card className={Style.card} align="center">

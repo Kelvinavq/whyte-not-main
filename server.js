@@ -12,21 +12,23 @@ app.use((req, res, next) => {
   next();
 });
 
-
 app.post("/send-email", (req, res) => {
   const { name, email, phone, comment, service } = req.body;
 
+  // Configuración del transporte para Zoho
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.zoho.com",
+    port: 465, // Puerto seguro para Zoho
+    secure: true, // Usar SSL/TLS
     auth: {
-      user: "kvalera200244@gmail.com",
-      pass: "-.K2002avq1992",
+      user: "kikodiaz@whytenot.com", // Tu dirección de correo de Zoho
+      pass: "Whytenot132.", // Tu contraseña de Zoho
     },
   });
 
   const mailOptions = {
-    from: "kvalera200244@gmail.com",
-    to: "kelvinalexandervalera@gmail.com",
+    from: "kikodiaz@whytenot.com", // Tu dirección de correo de Zoho
+    to: "kikodiaz@whytenot.com",
     subject: "Formulario de contacto",
     text: `
           Nombre: ${name}
@@ -45,11 +47,6 @@ app.post("/send-email", (req, res) => {
       res.json({ success: true });
     }
   });
-  if (data.success) {
-    alert("¡Formulario enviado con éxito!");
-  } else {
-    alert(`Hubo un error al enviar el formulario: ${data.error}`);
-  }
 });
 
 app.listen(3001, () => {

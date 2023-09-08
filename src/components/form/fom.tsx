@@ -49,10 +49,8 @@ function Form() {
       name: "Campaña de ADS",
     },
   ];
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
     const formData = new FormData(e.currentTarget);
   
     try {
@@ -61,14 +59,12 @@ function Form() {
         body: formData,
       });
   
-      console.log('Response:', response); // Agregar este log
-  
       if (response.ok) {
         const data = await response.json();
         if (data.success) {
           alert('¡Formulario enviado con éxito!');
         } else {
-          alert('Hubo un error al enviar el formulario.');
+          alert(`Hubo un error al enviar el formulario: ${data.error}`);
         }
       } else {
         alert('Error en la solicitud al servidor.');
@@ -77,6 +73,7 @@ function Form() {
       console.error('Error al enviar el formulario:', error);
     }
   };
+  
   
   return (
     <section className={Style.containerCard} data-aos="fade-right">

@@ -1,4 +1,7 @@
-import * as React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import { useForm, SubmitHandler } from "react-hook-form";
+
 import Style from "./form.module.css";
 import {
   Button,
@@ -14,67 +17,56 @@ import {
 } from "@chakra-ui/react";
 import { AiOutlineMail, AiOutlineUser, AiOutlinePhone } from "react-icons/ai";
 
+interface FormData {
+  name: string;
+  number: string;
+  email: string;
+  message: string;
+  service: string;
+}
+
+const services = [
+  {
+    id: 1,
+    name: "Diseño y desarrollo web",
+  },
+  {
+    id: 2,
+    name: "Manejo de redes sociales",
+  },
+  {
+    id: 3,
+    name: "Producción audiovisual",
+  },
+  {
+    id: 4,
+    name: "Comunicación corporativa",
+  },
+  {
+    id: 5,
+    name: "Campaña de ADS",
+  },
+];
+
 function Form() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [phone, setPhone] = React.useState("");
-  const [comment, setComment] = React.useState("");
-  const [service, setService] = React.useState(0);
-  let data = {
-    name: "",
-    email: "",
-    phone: "",
-    comment: "",
-    services: "",
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<FormData>();
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const onSubmit: SubmitHandler<FormData> = (data) => {
+    axios
+      .post("https://eokw2uqd7i6hbkr.m.pipedream.net", data)
+      .then((response) => {
+        setSuccessMessage(
+          `Thanks for signing up! Check your inbox for updates 😊`
+        );
+      })
+      .catch((e) => console.error(e));
   };
-  const services = [
-    {
-      id: 1,
-      name: "Diseño y desarrollo web",
-    },
-    {
-      id: 2,
-      name: "Manejo de redes sociales",
-    },
-    {
-      id: 3,
-      name: "Producción audiovisual",
-    },
-    {
-      id: 4,
-      name: "Comunicación corporativa",
-    },
-    {
-      id: 5,
-      name: "Campaña de ADS",
-    },
-  ];
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-  
-    try {
-      const response = await fetch('https://whytenot.com/send-email', {
-        method: 'POST',
-        body: formData,
-      });
-  
-      if (response.ok) {
-        const data = await response.json();
-        if (data.success) {
-          alert('¡Formulario enviado con éxito!');
-        } else {
-          alert(`Hubo un error al enviar el formulario: ${data.error}`);
-        }
-      } else {
-        alert('Error en la solicitud al servidor.');
-      }
-    } catch (error) {
-      console.error('Error al enviar el formulario:', error);
-    }
-  };
-  
-  
+
   return (
     <section className={Style.containerCard} data-aos="fade-right">
       <Card className={Style.card} align="center">
@@ -89,12 +81,7 @@ function Form() {
           </Heading>
         </CardHeader>
         <CardBody className={Style.containerForm}>
-          <form
-            action="/php/process.php"
-            method="post"
-            onSubmit={handleSubmit}
-            className={Style.form}
-          >
+          <form className={Style.form} onSubmit={handleSubmit(onSubmit)}>
             <div>
               <InputGroup className={Style.inputGroup}>
                 <InputLeftElement pointerEvents="none">
@@ -102,10 +89,8 @@ function Form() {
                 </InputLeftElement>
                 <Input
                   focusBorderColor="red.400"
-                  name="name"
+                  {...register("name")}
                   placeholder="Nombre y Apellido"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
                 />
               </InputGroup>
             </div>
@@ -116,11 +101,9 @@ function Form() {
                 </InputLeftElement>
                 <Input
                   focusBorderColor="red.400"
-                  name="mail"
+                  {...register("email")}
                   type="email"
                   placeholder="Correo Electrónico"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                 />
               </InputGroup>
             </div>
@@ -131,11 +114,9 @@ function Form() {
                 </InputLeftElement>
                 <Input
                   focusBorderColor="red.400"
-                  name="phone"
+                  {...register("number")}
                   type="tel"
                   placeholder="Número De Whatsapp"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
                 />
               </InputGroup>
             </div>
@@ -143,11 +124,10 @@ function Form() {
               <Select
                 className={Style.select}
                 placeholder="¿Qué servicio te interesa?"
-                value={service}
-                onChange={(e) => setService(Number(e.target.value))}
+                {...register("service")}
               >
                 {services.map((service) => (
-                  <option key={service.id} value={service.id}>
+                  <option key={service.id} value={service.name}>
                     {service.name}
                   </option>
                 ))}
@@ -157,11 +137,9 @@ function Form() {
               <Textarea
                 className={Style.textArea}
                 focusBorderColor="red.400"
-                name="comment"
+                {...register("message")}
                 placeholder="Comentarios"
                 size="md"
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}
               />
             </div>
             <Button className={Style.button} type="submit">

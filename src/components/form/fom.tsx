@@ -59,7 +59,7 @@ function Form() {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     axios
-      .post("https://eokw2uqd7i6hbkr.m.pipedream.net", data)
+      .post("https://eo7tzpzkwgc9w8s.m.pipedream.net", data)
       .then((response) => {
         Swal.fire({
           icon: "success",

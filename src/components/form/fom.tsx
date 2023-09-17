@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Swal from "sweetalert2";
 
 import Style from "./form.module.css";
 import {
@@ -60,9 +61,16 @@ function Form() {
     axios
       .post("https://eokw2uqd7i6hbkr.m.pipedream.net", data)
       .then((response) => {
-        setSuccessMessage(
-          `Thanks for signing up! Check your inbox for updates 😊`
-        );
+        Swal.fire({
+          icon: "success",
+          title: "Mensaje enviado",
+          text: "El correo ha sido enviado con éxito.",
+          confirmButtonText: "Aceptar",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.reload();
+          }
+        });
       })
       .catch((e) => console.error(e));
   };

@@ -31,35 +31,35 @@ function Parte(){
             <Button variant='solid' className={Style.buttonBanner} colorScheme='red' size='lg' >
                 <Link className={Style.link} href={'https://wa.link/t1uxho'}  target="_blank">CONTRÁTANOS</Link>
             </Button>
-            <h3 className={Style.title} data-aos="fade-up">
+            <h3 className={Style.title} >
                 Estas son algunas de las empresas con las que whyte not ha tenido el privilegio de trabajar en proyectos de marketing digital.  Estamos orgullosos de haber colaborado con cada una de ellas y estamos agradecidos por la confianza que han depositado en nosotros. Entre las empresas con las que hemos trabajado se encuentran algunas reconocidas como marcas lideres en sus respectivos sectores, asi como pequeñas y medianas empresas que buscan hacer crecer su presencia online.
             </h3>
-            <section className={Style.containerCarroussel} data-aos="fade-up">
+            <section className={Style.containerCarroussel} >
                 <h3>Fuimos parte de proyectos de marketing digital en</h3>
                 <Slider></Slider>
             </section>
-            <section className={Style.containerCarroussel2} data-aos="fade-up">
+            <section className={Style.containerCarroussel2} >
                 <h3>Y DE PROYECTOS DE TV EN CHILE (DIRECCIÓN Y PRODUCCIÓN)</h3>
                 <SliderImgTwo></SliderImgTwo>
             </section>
             <section className={Style.containerContacto} >
-                <Image src={fuimosParte} alt='' data-aos="fade-up"></Image>
+                <Image src={fuimosParte} alt='' ></Image>
                 <section className={Style.redesSociales}>
-                    <div data-aos="fade-up">
+                    <div >
                         <Link className={Style.link} href={'https://www.facebook.com/profile.php?viewas=100000686899395&id=100091506581426'}  target="_blank">
                             <Image src={facebook} alt=""/>
                             <h4 style={{color:"black"}}>SÍGUENOS EN FACEBOOK</h4>
                             <h4 style={{color:"#b60000"}}>WHYTE NOT MARKETING</h4>
                         </Link>
                     </div>
-                    <div data-aos="fade-up">
+                    <div >
                         <Link className={Style.link} href={'https://www.instagram.com/whytenot.marketing/'}  target="_blank">
                             <Image src={instagram} alt=""/>
                             <h4 style={{color:"black"}}>SÍGUENOS EN INSTAGRAM</h4>
                             <h4 style={{color:"#ff3030"}}>@WHYTENOT.MARKETING</h4>
                         </Link>
                     </div>
-                    <div data-aos="fade-up">
+                    <div >
                         <Link className={Style.link} href={'https://wa.link/t1uxho'}  target="_blank">
                             <Image src={whatsapp} alt=""/>
                             <h4 style={{color:"black"}}>CONTÁCTANOS</h4>

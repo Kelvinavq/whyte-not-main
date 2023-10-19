@@ -26,13 +26,14 @@ import { Montserrat } from "next/font/google";
 
 import HeaderHomeText from "../../public/img/home/HeaderHomeText.png";
 
+import Link from "next/link";
+
 const montserrat = Montserrat({
   weight: "variable",
   subsets: ["latin"],
 });
 
 export default function Page() {
-
   const [buttonSelected, setButtonSelected] = useState(1);
   const colorTransparent = { background: "transparent" };
   const colorRed = { background: "linear-gradient(#b60000,#b60000)" };
@@ -61,7 +62,7 @@ export default function Page() {
 
       title: "Contenidos",
 
-      text: "Desarrollamos contenidos sobre la base de la tecnología, con  eficientes métodos y experiencias de gestión para el cliente, con énfasis en novedosas  experiencias para los consumidores finales. Utilizando las distintas plataformas audiovisuales digitales de manera creativa tecnológica, intuitivas e  innovadoras.",
+      text: "Desarrollamos contenidos sobre la base de la tecnología, con eficientes métodos y experiencias de gestión para el cliente, Utilizando las distintas plataformas audiovisuales digitales de manera creativa tecnológica, intuitivas e innovadoras.",
 
       icon: "",
 
@@ -82,9 +83,8 @@ export default function Page() {
       icon: "",
 
       servicios: [
-        "Construcción de identidad de marca",
-        "Realización de aplicaciones moviles o sitios web para el desenvolvimiento de los trabajadores dentro de la empresa",
-        "Asesoría digital para cualquier tipo de negocio y sin importar el statu en que se encuentre, bien sea para su inicialización o potenciar",
+        "Realización de aplicaciones móviles o sitios web para el desarrollo profesional de tu empresa.",
+        "Asesoría digital para cualquier tipo de negocio y sin importar el statu en que se encuentre",
       ],
       img: ImgCardTwo,
     },
@@ -98,12 +98,11 @@ export default function Page() {
       icon: "",
 
       servicios: [
-        "Creación , desarrollo, producción, y  realización de contenidos, para comunicación corporativa interna, establecimientos  educacionales, corporaciones deportivas y culturales.",
+        "Creación, desarrollo, producción, y realización de contenidos, para comunicación corporativa interna, establecimientos educacionales, corporaciones deportivas y culturales.",
         "Estrategias, campañas y planes de marketing para empresas, retail, supermercados, shopping center, malls, strep center.",
-        "Desde su operación, es decir, su funcionamiento.",
-        "Montura de cartelería digital (Digital Signage)",
-        "Construcción de aplicación móvil dedicada",
-        "Montaje de cámaras de video inteligentes integradas.",
+        "Soporte de cartelería digital (Digital Signage)",
+        "Construcción de APP dedicada",
+        "CCTV con  AI",
       ],
       img: ImgCardThree,
     },
@@ -140,8 +139,8 @@ export default function Page() {
         </div>
       </header>
 
-      <section data-aos="fade-left" className={Style.sectionCards} >
-        <div className={Style.containerButton} >
+      <section data-aos="fade-left" className={Style.sectionCards}>
+        <div className={Style.containerButton}>
           <Button
             className={Style.button}
             style={colorButtonSelected[0]}
@@ -186,9 +185,11 @@ export default function Page() {
               </div>
               <Stack>
                 <CardBody>
-                  <Button variant="solid" colorScheme="red">
-                    Cotiza con nosotros
-                  </Button>
+                  <Link href="https://wa.link/3p9y3w" target="_blank">
+                    <Button variant="solid" colorScheme="red">
+                      Cotiza con nosotros
+                    </Button>
+                  </Link>
                 </CardBody>
               </Stack>
             </CardHeader>
@@ -224,9 +225,11 @@ export default function Page() {
             <h4>
               ¿Por qué elegir a <strong>Whyte not</strong>?
             </h4>
-            <Button variant="solid" colorScheme="red">
-              Cotiza con nosotros
-            </Button>
+            <Link href="https://wa.link/3p9y3w" target="_blank">
+              <Button variant="solid" colorScheme="red">
+                Cotiza con nosotros
+              </Button>
+            </Link>
           </section>
 
           <div className={Style.cards}>

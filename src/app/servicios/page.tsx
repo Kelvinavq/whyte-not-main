@@ -33,7 +33,7 @@ function Servicios() {
     {
       serviceTitle: "Desarrollo web",
       serviceContent:
-        "Contamos con un equipo multidisciplinario para la creación del contenido SEO, el desarrollo web, bien sea landing page o plataforma digital, y el diseño UI/UX atractivo para atrapar a tus clientes, de igual forma, contamos con ejecutivos que llevan el control de cada tarea, expertos que ejecutarán tu proyecto de principio a fin, sin importar la tecnología a utilizar. Somos expertos en diferentes lenguajes de desarrollo.",
+        "Contamos con un equipo multidisciplinario para la creación del contenido SEO, el desarrollo web, landing page o plataforma digital. También el diseño UI/UX de forma atractivo para sorprender a tus clientes. De igual forma contamos con ejecutivos que llevan el control de cada tarea, expertos que  ejecutarán tu proyecto de principio a fin, sin importar la tecnología a utilizar.",
       serviceImg: ImgService3,
       serviceImgSize: 400,
     },
@@ -68,14 +68,14 @@ function Servicios() {
     {
       serviceTitle: "Buscar eventos",
       serviceContent:
-        "Incorporamos tu marca en eventos de emprendimiento para posicionarse y crear lazos comerciales con otras marcas en tu mismo mercado, también estamos en capacidad de crear tu propio evento corporativo.",
+        "Integramos tu marca a eventos de emprendimiento para posicionarse y crear lazos comerciales con otras del mismo rubro.  También creamos y producimos tus propios eventos corporativos.",
       serviceImg: ImgService8,
       serviceImgSize: 400,
     },
     {
-      serviceTitle: "Correo de propaganda",
+      serviceTitle: "MAILING",
       serviceContent:
-        "Contamos con amplias bases de datos y trabajamos con tecnologías que facilitan estas bases de datos, y realizamos envíos masivos de correos electrónicos a los clientes recopilados con el fin de atraer nuevos clientes y potenciar sus ventas.",
+        "Contamos con amplias bases de datos y trabajamos con mejores  tecnologías que facilitan su funcionamiento. Realizamos envíos masivos de correos con un contenido que destaca por su diseño para  así promocionar los productos y servicios de tu marca.",
       serviceImg: ImgService9,
       serviceImgSize: 400,
     },
@@ -87,20 +87,20 @@ function Servicios() {
         <source src="/img/service/banner.mp4" type="video/mp4" />
       </video>
       <div className={Style.buttonBanner}>
-        <Button
-          variant="solid"
-          data-aos="flip-left"
-          colorScheme="red"
-          size="lg"
+        <Link
+          className={Style.link}
+          href={"https://wa.link/3p9y3w"}
+          target="_blank"
         >
-          <Link
-            className={Style.link}
-            href={"https://wa.link/t1uxho"}
-            target="_blank"
+          <Button
+            variant="solid"
+            data-aos="flip-left"
+            colorScheme="red"
+            size="lg"
           >
             CONTRÁTANOS
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
       <section className={Style.sectionService}>
         <Image
@@ -114,13 +114,17 @@ function Servicios() {
         <div className={Style.sectionServiceContent} data-aos="fade-right">
           <h2>Investigación de mercado</h2>
           <p>
-            Contamos con un equipo capacitado en evaluar, diagnosticar y
-            delinear una estrategia de marketing adecuada para posicionar su
-            marca y obtener ventajas sobre sus marcas competidoras.
+            Nuestro equipo está altamente capacitado para evaluar, diagnosticar
+            y delinear una estrategia de marketing adecuada para posicionar su
+            marca y obtener ventajas sobre la competencia.
           </p>
+          <Link href="https://wa.link/3p9y3w" target="_blank">
+
           <Button variant="solid" colorScheme="red">
             CONTRÁTANOS
           </Button>
+        </Link>
+
         </div>
       </section>
       {services.map((service, id) => {
@@ -142,9 +146,13 @@ function Servicios() {
               >
                 <h2>{service.serviceTitle}</h2>
                 <p>{service.serviceContent}</p>
+          <Link href="https://wa.link/3p9y3w" target="_blank">
+
                 <Button variant="solid" colorScheme="red">
                   CONTRÁTANOS
                 </Button>
+        </Link>
+
               </div>
             </section>
           );
@@ -157,9 +165,13 @@ function Servicios() {
             >
               <h2>{service.serviceTitle}</h2>
               <p>{service.serviceContent}</p>
+          <Link href="https://wa.link/3p9y3w" target="_blank">
+
               <Button variant="solid" colorScheme="red">
                 CONTRÁTANOS
               </Button>
+        </Link>
+
             </div>
             <Image
               data-aos="fade-left"

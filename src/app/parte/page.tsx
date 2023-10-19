@@ -29,7 +29,7 @@ function Parte(){
                 <source src="/img/parte/banner.mp4" type="video/mp4" />
             </video>
             <Button variant='solid' className={Style.buttonBanner} colorScheme='red' size='lg' >
-                <Link className={Style.link} href={'https://wa.link/t1uxho'}  target="_blank">CONTRÁTANOS</Link>
+                <Link className={Style.link} href='https://wa.link/3p9y3w' target="_blank">CONTRÁTANOS</Link>
             </Button>
             <h3 className={Style.title} >
                 Estas son algunas de las empresas con las que whyte not ha tenido el privilegio de trabajar en proyectos de marketing digital.  Estamos orgullosos de haber colaborado con cada una de ellas y estamos agradecidos por la confianza que han depositado en nosotros. Entre las empresas con las que hemos trabajado se encuentran algunas reconocidas como marcas lideres en sus respectivos sectores, asi como pequeñas y medianas empresas que buscan hacer crecer su presencia online.
